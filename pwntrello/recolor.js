@@ -1,5 +1,7 @@
 var trelloRoot = null;
-window.onload = initialize
+window.addEventListener ? 
+window.addEventListener("load",initialize,false) : 
+window.attachEvent && window.attachEvent("onload",initialize);
 
 function initialize() {
 
